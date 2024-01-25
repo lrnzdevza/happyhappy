@@ -1,0 +1,122 @@
+@import '../../_css/type.scss';
+
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-flex;
+  padding: 10px 24px;
+  font-family: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  svg {
+    margin-right: calc(var(--base) / 2);
+    width: var(--base);
+    height: var(--base);
+  }
+}
+
+.label {
+  @extend %label;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.appearance--primary {
+  background-color: #f5586c; /* Replace with your logo's vibrant color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
+
+.appearance--primary:hover {
+  box-shadow: 0 6px 12px var(--color-blue-600);
+}
+
+.appearance--secondary {
+  background-color: var(--color-blue-500); /* Or another pastel color from your logo */
+  color: #333;
+  border: 2px solid var(--color-orange-500); /* Can use the primary color here */
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.appearance--secondary:hover {
+  background-color: var(--color-blue-600);
+  color: white;
+}
+
+.appearance--tertiary {
+  background-color: transparent;
+  color: #333;
+  border: 2px dashed #f5586c; /* A playful touch */
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.appearance--tertiary:hover {
+  background-color: #f0f0f0;
+}
+
+.primary--invert {
+  background-color: var(--theme-elevation-0);
+  color: var(--theme-elevation-1000);
+}
+
+.secondary--invert {
+  background-color: var(--theme-elevation-1000);
+  box-shadow: inset 0 0 0 1px var(--theme-elevation-0);
+}
+
+.appearance--default {
+  padding: 0;
+  color: var(--theme-text);
+}
+
+.appearance--none {
+  padding: 0;
+  color: var(--theme-text);
+
+  &:local() {
+    .label {
+      text-transform: none;
+      line-height: inherit;
+      font-size: inherit;
+    }
+  }
+}

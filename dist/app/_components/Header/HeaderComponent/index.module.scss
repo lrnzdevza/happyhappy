@@ -1,0 +1,28 @@
+.header {
+    padding: 16px 0;
+  }
+  
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: calc(var(--base) / 2) var(--base)
+  }
+  
+  .logo {
+    width: 170px;
+  }
+  
+  .hide { 
+    display: none;
+  }
+
+ .logo_container{
+    display: flex;
+    align-items: center;
+ } 
+
+.logo_p {
+    color: var(--color-orange-500);
+}

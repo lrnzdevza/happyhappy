@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "functions": {
+    "/[slug]": {},
+    "/account": {},
+    "/cart": {},
+    "/checkout": {},
+    "/account/orders": {},
+    "/logout": {},
+    "/order-confirmation": {},
+    "/orders": {},
+    "/login": {},
+    "/products/[slug]": {},
+    "/recover-password": {},
+    "/reset-password": {},
+    "/styleguide/call-to-action": {},
+    "/styleguide/buttons": {},
+    "/styleguide/content-block": {},
+    "/styleguide/media-block": {},
+    "/styleguide/message": {},
+    "/styleguide": {},
+    "/styleguide/typography": {},
+    "/create-account": {}
+  }
+}
